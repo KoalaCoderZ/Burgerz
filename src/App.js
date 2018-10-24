@@ -1,25 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import NavBar from "./pages/navbar";
+import ItemCard from "./pages/card";
+import "./App.css";
 
 class App extends Component {
+  state = {
+    counters: [
+      { id: 1, value: 0, name: "burgers1" },
+      { id: 2, value: 0, name: "burgers2" },
+      { id: 3, value: 0, name: "burgers3" },
+      { id: 4, value: 0, name: "burgers4" }
+    ]
+  };
   render() {
+    console.log(this.state.name);
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div className="container">
+        <NavBar />
+        <div className="row">
+          {this.state.counters.map(counter => (
+            <div
+              className="col-sm-12 col-md-6 col-lg-6"
+              style={{ marginBottom: 20 }}
+            >
+              <ItemCard
+                counters={this.state.counters}
+                names={this.state.name}
+              />
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
