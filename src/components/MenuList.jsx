@@ -1,12 +1,14 @@
 import React from "react";
 
-const ItemCard = (props) => {
+const MenuList = (props) => {
     return (
       <div className="card">
         <img
-          className="card-img-top"
+          className="card-img-top img img-responsive"
           src={props.pic}
-          alt="Card image cap"
+          alt={props.name}
+          width="460" 
+          height="345"
         />
         <div className="card-header">
           <h2>{props.name}</h2>
@@ -18,4 +20,4 @@ const ItemCard = (props) => {
     );
 }
 
-export default ItemCard;
+export default MenuList;

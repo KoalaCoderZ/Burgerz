@@ -2,25 +2,25 @@
   "items":[
     {
       "id": 0,
-      "pic":"http://placehold.it/400x80",
+      "pic":"https://assets-pergikuliner.com/prFPn_K0LKmx0F1JN2Qcsy0lcos=/385x290/smart/https://assets-pergikuliner.com/uploads/image/picture/674461/picture-1505457911.jpg",
       "name":"Burger Blenger",
       "description": "Blenger dah pokoknya mah"
     },
     {
       "id": 1,
-      "pic":"http://placehold.it/400x80",
+      "pic":"https://foodsafetynewsfullservice.marlersites.com/files/2014/06/medium-rare-burger-1.jpg",
       "name":"Burger Sedeng",
       "description": "Sedeng-sedeng aja"
     },
     {
       "id": 2,
-      "pic":"http://placehold.it/400x80",
+      "pic":"http://i2.wp.com/www.foodrepublic.com/wp-content/uploads/2015/10/doojie.jpg?resize=817%2C714",
       "name":"Burger Asoy",
       "description": "Asoy bet"
     },
     {
       "id": 3,
-      "pic":"http://placehold.it/400x80",
+      "pic":"https://media.foody.id/res/g10/94338/prof/s576x330/foody-mobile-burger-jpg-320-636186247998630224.jpg",
       "name":"Burger Edam",
       "description": "Burger keliling"
     }

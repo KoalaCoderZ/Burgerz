@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavBar from "./pages/navbar";
-import ItemCard from "./pages/card";
+import NavBar from "./components/NavBar";
+import MenuList from "./components/MenuList";
 import { connect } from 'react-redux';
 import { GET_DATA } from './actions/tableAction';
 import "./App.css";
@@ -24,7 +24,7 @@ class App extends Component {
               style={{ marginBottom: 20 }}
               key={`${item.id+1}`}
             >
-              <ItemCard
+              <MenuList
                 pic={item.pic}
                 name={item.name}
                 desc={item.description}
