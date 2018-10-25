@@ -1,0 +1,28 @@
+{
+  "items":[
+    {
+      "id": 0,
+      "pic":"http://placehold.it/400x80",
+      "name":"Burger Blenger",
+      "description": "Blenger dah pokoknya mah"
+    },
+    {
+      "id": 1,
+      "pic":"http://placehold.it/400x80",
+      "name":"Burger Sedeng",
+      "description": "Sedeng-sedeng aja"
+    },
+    {
+      "id": 2,
+      "pic":"http://placehold.it/400x80",
+      "name":"Burger Asoy",
+      "description": "Asoy bet"
+    },
+    {
+      "id": 3,
+      "pic":"http://placehold.it/400x80",
+      "name":"Burger Edam",
+      "description": "Burger keliling"
+    }
+  ]
+}

@@ -1,31 +1,33 @@
 import React, { Component } from "react";
 import NavBar from "./pages/navbar";
 import ItemCard from "./pages/card";
+import { connect } from 'react-redux';
+import { GET_DATA } from './actions/tableAction';
 import "./App.css";
 
 class App extends Component {
-  state = {
-    counters: [
-      { id: 1, value: 0, name: "burgers1" },
-      { id: 2, value: 0, name: "burgers2" },
-      { id: 3, value: 0, name: "burgers3" },
-      { id: 4, value: 0, name: "burgers4" }
-    ]
-  };
+
+  componentDidMount(){
+    const { GET_DATA } = this.props;
+    GET_DATA()
+  }
+
   render() {
-    console.log(this.state.name);
+    const { tableReducer: { data }} = this.props;
     return (
       <div className="container">
         <NavBar />
         <div className="row">
-          {this.state.counters.map(counter => (
+          {data.map(item => (
             <div
               className="col-sm-12 col-md-6 col-lg-6"
               style={{ marginBottom: 20 }}
+              key={`${item.id+1}`}
             >
               <ItemCard
-                counters={this.state.counters}
-                names={this.state.name}
+                pic={item.pic}
+                name={item.name}
+                desc={item.description}
               />
             </div>
           ))}
@@ -35,4 +37,10 @@ class App extends Component {
   }
 }
 
-export default App;
+const mapStateToProps = ({ tableReducer }) => ({
+  tableReducer
+});
+
+export default connect(mapStateToProps,{
+  GET_DATA
+})(App);

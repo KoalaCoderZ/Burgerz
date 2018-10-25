@@ -1,23 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 
-class ItemCard extends Component {
-  render() {
+const ItemCard = (props) => {
     return (
       <div className="card">
         <img
           className="card-img-top"
-          src="http://placehold.it/400x80"
+          src={props.pic}
           alt="Card image cap"
         />
         <div className="card-header">
-          <h2>Item Name</h2>
+          <h2>{props.name}</h2>
         </div>
         <div className="card-body">
-          <p>Item Description</p>
+          <p>{props.desc}</p>
         </div>
       </div>
     );
-  }
 }
 
 export default ItemCard;
