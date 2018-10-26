@@ -7,8 +7,13 @@ class NavBar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+<<<<<<< HEAD:src/pages/navbar.jsx
+          <a className="navbar-brand" href="#">
+            <b className="fa fa-utensils">B</b> for burgers
+=======
           <a className="navbar-brand" href="/">
             Navbar
+>>>>>>> 9af9f9bba1a129bb10539f80fdde232a571d1f2e:src/components/NavBar.jsx
           </a>
           <button
             className="navbar-toggler"

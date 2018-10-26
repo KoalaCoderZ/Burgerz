@@ -17,3 +17,11 @@ code {
   text-align: center;
   background-color: #02a871;
 }
+
+.divider {
+  width: 100%;
+  height: 55px;
+  background-color: #02a871;
+  margin: 5px;
+  padding: 0;
+}

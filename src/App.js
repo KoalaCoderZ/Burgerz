@@ -1,8 +1,15 @@
 import React, { Component } from "react";
+<<<<<<< HEAD
+import NavBar from "./pages/navbar";
+import ItemCard from "./pages/card";
+import Biodata from "./forms/biodata";
+import Divider from "./pages/divider";
+=======
 import NavBar from "./components/NavBar";
 import MenuList from "./components/MenuList";
 import { connect } from 'react-redux';
 import { GET_DATA } from './actions/tableAction';
+>>>>>>> 9af9f9bba1a129bb10539f80fdde232a571d1f2e
 import "./App.css";
 
 class App extends Component {
@@ -31,6 +38,10 @@ class App extends Component {
               />
             </div>
           ))}
+        </div>
+        <Divider />
+        <div className="row">
+          <Biodata />
         </div>
       </div>
     );
