@@ -7,7 +7,7 @@ class NavBar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <b className="fa fa-utensils">B</b> for burgers
           </a>
           <button
@@ -24,10 +24,14 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <NavLink to="/menu">Menu</NavLink>
+                <NavLink className="nav-link" to="/menu">
+                  About
+                </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/features">Features</NavLink>
+                <NavLink className="nav-link" to="/features">
+                  Features
+                </NavLink>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/">
