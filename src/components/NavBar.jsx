@@ -6,8 +6,13 @@ class NavBar extends Component {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
+<<<<<<< HEAD:src/pages/navbar.jsx
           <a className="navbar-brand" href="#">
             <b className="fa fa-utensils">B</b> for burgers
+=======
+          <a className="navbar-brand" href="/">
+            Navbar
+>>>>>>> 9af9f9bba1a129bb10539f80fdde232a571d1f2e:src/components/NavBar.jsx
           </a>
           <button
             className="navbar-toggler"
@@ -23,24 +28,24 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/">
                   Home <span className="sr-only">(current)</span>
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/">
                   Features
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <a className="nav-link" href="/">
                   Pricing
                 </a>
               </li>
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
-                  href="#"
+                  href="/"
                   id="navbarDropdownMenuLink"
                   role="button"
                   data-toggle="dropdown"
@@ -53,13 +58,13 @@ class NavBar extends Component {
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLink"
                 >
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Action
                   </a>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Another action
                   </a>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="/">
                     Something else here
                   </a>
                 </div>
