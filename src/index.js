@@ -3,13 +3,15 @@ import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 import "./index.css";
-import App from "./App";
+import Routes from './route';
 import * as serviceWorker from "./serviceWorker";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "jquery/dist/jquery";
 
 render(
   // eslint-disable-next-line
   <Provider store={store}>
-    <App />
+   <Routes />
   </Provider>,
   document.getElementById('root'),
 );
