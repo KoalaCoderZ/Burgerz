@@ -24,7 +24,7 @@ class NavBar extends Component {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <NavLink className="nav-link" to="/menu">
+                <NavLink className="nav-link" to="/about">
                   About
                 </NavLink>
               </li>

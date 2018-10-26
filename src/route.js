@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import About from "./Routes/About";
 import Features from "./Routes/Features";
-import App from "./App";
+import Menu from "./Routes/Menu";
 import Error from "./components/error";
 
 // eslint-disable-next-line
@@ -15,8 +15,8 @@ class Routes extends React.Component {
           <NavBar />
           <div style={{ height: "100%" }}>
             <Switch>
-              <Route exact path="/" component={App} />
-              <Route exact path="/menu" component={About} />
+              <Route exact path="/" component={Menu} />
+              <Route exact path="/about" component={About} />
               <Route exact path="/features" component={Features} />
               <Route component={Error} />
             </Switch>
