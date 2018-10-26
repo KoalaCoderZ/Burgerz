@@ -7,7 +7,7 @@ class NavBar extends Component {
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <a className="navbar-brand" href="#">
-            Navbar
+            <b className="fa fa-utensils">B</b> for burgers
           </a>
           <button
             className="navbar-toggler"

@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import NavBar from "./pages/navbar";
 import ItemCard from "./pages/card";
+import Biodata from "./forms/biodata";
+import Divider from "./pages/divider";
 import "./App.css";
 
 class App extends Component {
@@ -29,6 +31,10 @@ class App extends Component {
               />
             </div>
           ))}
+        </div>
+        <Divider />
+        <div className="row">
+          <Biodata />
         </div>
       </div>
     );
